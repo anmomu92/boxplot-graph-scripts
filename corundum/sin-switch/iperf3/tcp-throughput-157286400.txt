@@ -1,0 +1,3 @@
+transfer 11.000
+bitrate 9415.000
+retransmissions 0

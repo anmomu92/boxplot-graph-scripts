@@ -1,0 +1,84 @@
+INJ BITRATE: 100 - PKT BURST: 5 - BUFFER SIZE: net.core.rmem_default = 212992
+100 0
+INJ BITRATE: 100 - PKT BURST: 10 - BUFFER SIZE: net.core.rmem_default = 212992
+100 0
+INJ BITRATE: 100 - PKT BURST: 20 - BUFFER SIZE: net.core.rmem_default = 212992
+100 0
+INJ BITRATE: 100 - PKT BURST: 50 - BUFFER SIZE: net.core.rmem_default = 212992
+100 0
+INJ BITRATE: 100 - PKT BURST: 100 - BUFFER SIZE: net.core.rmem_default = 212992
+100 0
+INJ BITRATE: 100 - PKT BURST: 200 - BUFFER SIZE: net.core.rmem_default = 212992
+100 0
+INJ BITRATE: 500 - PKT BURST: 5 - BUFFER SIZE: net.core.rmem_default = 212992
+500 0
+INJ BITRATE: 500 - PKT BURST: 10 - BUFFER SIZE: net.core.rmem_default = 212992
+500 0
+INJ BITRATE: 500 - PKT BURST: 20 - BUFFER SIZE: net.core.rmem_default = 212992
+500 0
+INJ BITRATE: 500 - PKT BURST: 50 - BUFFER SIZE: net.core.rmem_default = 212992
+500 0
+INJ BITRATE: 500 - PKT BURST: 100 - BUFFER SIZE: net.core.rmem_default = 212992
+500 0
+INJ BITRATE: 500 - PKT BURST: 200 - BUFFER SIZE: net.core.rmem_default = 212992
+500 0
+INJ BITRATE: 1000 - PKT BURST: 5 - BUFFER SIZE: net.core.rmem_default = 212992
+1000 0
+INJ BITRATE: 1000 - PKT BURST: 10 - BUFFER SIZE: net.core.rmem_default = 212992
+1000 0
+INJ BITRATE: 1000 - PKT BURST: 20 - BUFFER SIZE: net.core.rmem_default = 212992
+1000 0
+INJ BITRATE: 1000 - PKT BURST: 50 - BUFFER SIZE: net.core.rmem_default = 212992
+1000 0
+INJ BITRATE: 1000 - PKT BURST: 100 - BUFFER SIZE: net.core.rmem_default = 212992
+1000 0
+INJ BITRATE: 1000 - PKT BURST: 200 - BUFFER SIZE: net.core.rmem_default = 212992
+1000 0
+INJ BITRATE: 2000 - PKT BURST: 5 - BUFFER SIZE: net.core.rmem_default = 212992
+2000 0
+INJ BITRATE: 2000 - PKT BURST: 10 - BUFFER SIZE: net.core.rmem_default = 212992
+2000 0
+INJ BITRATE: 2000 - PKT BURST: 20 - BUFFER SIZE: net.core.rmem_default = 212992
+2000 0
+INJ BITRATE: 2000 - PKT BURST: 50 - BUFFER SIZE: net.core.rmem_default = 212992
+2000 0
+INJ BITRATE: 2000 - PKT BURST: 100 - BUFFER SIZE: net.core.rmem_default = 212992
+2000 0
+INJ BITRATE: 2000 - PKT BURST: 200 - BUFFER SIZE: net.core.rmem_default = 212992
+2000 0
+INJ BITRATE: 3000 - PKT BURST: 5 - BUFFER SIZE: net.core.rmem_default = 212992
+3000 0
+INJ BITRATE: 3000 - PKT BURST: 10 - BUFFER SIZE: net.core.rmem_default = 212992
+3000 0
+INJ BITRATE: 3000 - PKT BURST: 20 - BUFFER SIZE: net.core.rmem_default = 212992
+3000 0
+INJ BITRATE: 3000 - PKT BURST: 50 - BUFFER SIZE: net.core.rmem_default = 212992
+3000 0
+INJ BITRATE: 3000 - PKT BURST: 100 - BUFFER SIZE: net.core.rmem_default = 212992
+3000 0
+INJ BITRATE: 3000 - PKT BURST: 200 - BUFFER SIZE: net.core.rmem_default = 212992
+3000 0
+INJ BITRATE: 10000 - PKT BURST: 5 - BUFFER SIZE: net.core.rmem_default = 212992
+10000 0
+INJ BITRATE: 10000 - PKT BURST: 10 - BUFFER SIZE: net.core.rmem_default = 212992
+10000 0
+INJ BITRATE: 10000 - PKT BURST: 20 - BUFFER SIZE: net.core.rmem_default = 212992
+10000 0
+INJ BITRATE: 10000 - PKT BURST: 50 - BUFFER SIZE: net.core.rmem_default = 212992
+10000 0
+INJ BITRATE: 10000 - PKT BURST: 100 - BUFFER SIZE: net.core.rmem_default = 212992
+10000 0
+INJ BITRATE: 10000 - PKT BURST: 200 - BUFFER SIZE: net.core.rmem_default = 212992
+10000 0
+INJ BITRATE: 0 - PKT BURST: 5 - BUFFER SIZE: net.core.rmem_default = 212992
+0 0
+INJ BITRATE: 0 - PKT BURST: 10 - BUFFER SIZE: net.core.rmem_default = 212992
+0 .190
+INJ BITRATE: 0 - PKT BURST: 20 - BUFFER SIZE: net.core.rmem_default = 212992
+0 0
+INJ BITRATE: 0 - PKT BURST: 50 - BUFFER SIZE: net.core.rmem_default = 212992
+0 0
+INJ BITRATE: 0 - PKT BURST: 100 - BUFFER SIZE: net.core.rmem_default = 212992
+0 0
+INJ BITRATE: 0 - PKT BURST: 200 - BUFFER SIZE: net.core.rmem_default = 212992
+0 0
