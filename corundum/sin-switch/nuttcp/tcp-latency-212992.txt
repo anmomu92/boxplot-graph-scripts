@@ -1,1 +1,2 @@
-latency 
+# The average latency after 50 runs is the following: 
+.556

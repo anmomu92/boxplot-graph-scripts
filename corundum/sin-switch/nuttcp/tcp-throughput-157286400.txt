@@ -1,1 +1,2 @@
-throughput 9408.359
+# The average throughput after 50 runs is the following: 
+9406.226

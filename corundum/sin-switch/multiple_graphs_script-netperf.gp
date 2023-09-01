@@ -1,3 +1,6 @@
+# Set the test name
+test_name = "netperf"
+
 # Set the output file type and name
 set terminal svg
 
@@ -6,7 +9,8 @@ set terminal svg
 ##################
 
 # Plot the udp-throughput 
-set output 'udp-throughput.svg'
+output_filename = test_name . "/udp_throughput.svg"
+set output output_filename 
 
 # Set the plot title and axis labels for the first graph
 set title 'Netperf - UDP connection throughput'
@@ -31,8 +35,12 @@ set offsets 0.5, 0.5, graph 0.1, graph 0.1
 
 
 # Plot the first graph
-plot "udp-throughput-212992.txt" using 0:2:xtic(1) with linespoints linestyle 1 title "Buffer size: 208 KB", "" using 0:2:2 with labels font ',8' offset char 1.75,-0.5 notitle "", \
-     "udp-throughput-157286400.txt" using 0:2:xtic(1) with linespoints linestyle 2 title "Buffer size: 150 MB", "" using 0:2:2 with labels font ',8' offset char -1.75,0.5 notitle ""
+throughput_dataset_1 = test_name . "/udp-throughput-212992.txt"
+throughput_dataset_2 = test_name . "/udp-throughput-157286400.txt"
+set output output_filename 
+
+plot throughput_dataset_1 using 0:2:xtic(1) with linespoints linestyle 1 title "Buffer size: 208 KB", "" using 0:2:2 with labels font ',8' offset char 1.75,-0.5 notitle "", \
+     throughput_dataset_2 using 0:2:xtic(1) with linespoints linestyle 2 title "Buffer size: 150 MB", "" using 0:2:2 with labels font ',8' offset char -1.75,0.5 notitle ""
      
 
 #############
@@ -40,7 +48,8 @@ plot "udp-throughput-212992.txt" using 0:2:xtic(1) with linespoints linestyle 1 
 #############
 
 # Plot the udp-error 
-set output 'udp-error.svg'
+output_filename = test_name . "/udp_error.svg"
+set output output_filename 
 
 # Set the plot title and axis labels for the second graph
 set title 'Netperf - UDP connection error'
@@ -65,7 +74,11 @@ set offsets 0.5, 0.5, graph 0.1, graph 0.1
 
 
 # Plot the first graph
-plot "udp-error-212992.txt" using 0:2:xtic(1) with linespoints linestyle 1 title "Buffer size: 208 KB", "" using 0:2:2 with labels font ',8' offset char 0,-0.5 notitle "", \
-     "udp-error-157286400.txt" using 0:2:xtic(1) with linespoints linestyle 2 title "Buffer size: 150 MB", "" using 0:2:2 with labels font ',8' offset char 0,0.5 notitle ""
+error_dataset_1 = test_name . "/udp-error-212992.txt"
+error_dataset_2 = test_name . "/udp-error-157286400.txt"
+set output output_filename 
+
+plot error_dataset_1 using 0:2:xtic(1) with linespoints linestyle 1 title "Buffer size: 208 KB", "" using 0:2:2 with labels font ',8' offset char 0,-0.5 notitle "", \
+     error_dataset_2 using 0:2:xtic(1) with linespoints linestyle 2 title "Buffer size: 150 MB", "" using 0:2:2 with labels font ',8' offset char 0,0.5 notitle ""
      
 

@@ -1,3 +1,2 @@
-transfer 11.000
-bitrate 9415.000
-retransmissions 0
+# The average bitrate after 50 runs is the following: 
+9415.000
