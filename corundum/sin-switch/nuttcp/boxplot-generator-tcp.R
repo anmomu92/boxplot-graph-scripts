@@ -1,6 +1,6 @@
 # Sample data for multiple boxes
-data1 <- read.table("tcp-box-plot-212992.txt", header = FALSE)
-data2 <- read.table("tcp-box-plot-157286400.txt", header = FALSE)
+data1 <- read.table("sin-switch/nuttcp/tcp-box-plot-212992.txt", header = FALSE)
+data2 <- read.table("sin-switch/nuttcp/tcp-box-plot-157286400.txt", header = FALSE)
 
 # Define custom y-axis values
 #y_values <- c("208 KB", "150 MB")
@@ -15,7 +15,7 @@ colnames(data_matrix) <- column_names
 
 
 # Create a boxplot with multiple boxes
-bp <- boxplot(data_matrix, horizontal=TRUE, main="iperf3 TCP throughput", xlab="Throughput (Mbps)", ylab="Buffer size", col=c("lightblue", "lightgreen"), outline=TRUE)
+bp <- boxplot(data_matrix, horizontal=TRUE, main="Conf. 2 - nuttcp TCP throughput", xlab="Throughput (Mbps)", ylab="Buffer size", col=c("lightblue", "lightgreen"), outline=TRUE)
 
 # Calculate quartiles and median for each box
 q1 <- bp$stats[2, ]
@@ -28,5 +28,10 @@ legend_labels <- sapply(1:ncol(data_matrix), function(i) {
 })
 
 # Create a legend
-legend("topright", legend=legend_labels, fill=c("lightblue", "lightgreen"), cex = 0.7)
+legend("topleft", legend=legend_labels, fill=c("lightblue", "lightgreen"), cex = 0.7)
 
+# Open an SVG graphics device and save the plot as an SVG image
+svg("boxplots/nuttcp-boxplot-tcp-throughput.svg")
+boxplot(data_matrix, horizontal=TRUE, main="Conf. 2 - nuttcp TCP throughput", xlab="Throughput (Mbps)", ylab="Buffer size", col=c("lightblue", "lightgreen"), outline=TRUE)
+legend("topleft", legend=legend_labels, fill=c("lightblue", "lightgreen"), cex = 0.7)
+dev.off()

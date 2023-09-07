@@ -6,13 +6,10 @@ data4 <- read.table("sin-switch/netperf/udp-box-plot-212992-4096.txt", header = 
 data5 <- read.table("sin-switch/netperf/udp-box-plot-212992-8192.txt", header = FALSE)
 data6 <- read.table("sin-switch/netperf/udp-box-plot-212992-16384.txt", header = FALSE)
 
-# Define custom y-axis values
-#y_values <- c("208 KB", "150 MB")
-
 # Combine data into a matrix
 data_matrix <- cbind(data1, data2, data3, data4, data5, data6)
 
-column_names <- c("512 B", "1024 B", "2048 B", "4096 B", "8192 B", "16384 B")
+column_names <- c("512", "1024", "2048", "4096", "8192", "16384")
 
 # Set the column names for the data_matrix
 colnames(data_matrix) <- column_names
@@ -32,10 +29,10 @@ legend_labels <- sapply(1:ncol(data_matrix), function(i) {
 })
 
 # Create a legend
-legend("right", legend=legend_labels, xpd=TRUE, inset=c(0, -.45), fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
+legend("bottomright", legend=legend_labels, fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
 
 # Open an SVG graphics device and save the plot as an SVG image
 svg("boxplots/netperf-boxplot-udp-throughput-208kb.svg")
-boxplot(data_matrix, horizontal=FALSE, main="Conf. 2 - netperf UDP throughput (208 KB)", ylab="Throughput (Mbps)", xlab="Message size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=FALSE)
-legend("right", legend=legend_labels, xpd=TRUE, inset=c(0, -.45), fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
+boxplot(data_matrix, horizontal=FALSE, main="Conf. 2 - netperf UDP throughput (208 KB)", ylab="Throughput (Mbps)", xlab="Message size (B)", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
+legend("bottomright", legend=legend_labels, fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
 dev.off()
