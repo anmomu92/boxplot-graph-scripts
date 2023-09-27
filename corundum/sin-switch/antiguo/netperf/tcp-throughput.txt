@@ -1,2 +1,0 @@
-bitrate 9414.000
-bitrate 9413.930

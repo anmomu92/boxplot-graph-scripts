@@ -1,0 +1,2 @@
+# The average bitrate after 1 runs is the following: 
+25351.000

@@ -1,0 +1,2 @@
+# The average throughput after 1 runs is the following: 
+8437.870

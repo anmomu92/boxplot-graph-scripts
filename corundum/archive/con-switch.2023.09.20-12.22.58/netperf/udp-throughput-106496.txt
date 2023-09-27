@@ -1,0 +1,12 @@
+MSG_SIZE = 512 - BUFFER_SIZE = net.core.rmem_default = 106496
+512 6163.980
+MSG_SIZE = 1024 - BUFFER_SIZE = net.core.rmem_default = 106496
+1024 9325.990
+MSG_SIZE = 2048 - BUFFER_SIZE = net.core.rmem_default = 106496
+2048 9187.710
+MSG_SIZE = 4096 - BUFFER_SIZE = net.core.rmem_default = 106496
+4096 8439.170
+MSG_SIZE = 8192 - BUFFER_SIZE = net.core.rmem_default = 106496
+8192 6071.170
+MSG_SIZE = 16384 - BUFFER_SIZE = net.core.rmem_default = 106496
+16384 8700.510

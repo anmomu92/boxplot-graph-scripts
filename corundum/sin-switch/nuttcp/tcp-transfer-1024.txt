@@ -1,0 +1,2 @@
+# The average transfer after 50 runs is the following: 
+44865.908

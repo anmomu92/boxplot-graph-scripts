@@ -1,2 +1,0 @@
-# The average throughput after 50 runs is the following: 
-bitrate 9382.524
