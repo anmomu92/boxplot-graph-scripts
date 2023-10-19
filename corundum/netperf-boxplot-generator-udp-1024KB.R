@@ -16,7 +16,7 @@ colnames(data_matrix) <- column_names
 
 
 # Create a boxplot with multiple boxes
-bp <- boxplot(data_matrix, horizontal=FALSE, main="Conf. 2 - netperf UDP throughput (1 MB)", ylab="Throughput (Mbps)", xlab="Message size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=FALSE)
+bp <- boxplot(data_matrix, horizontal=FALSE, main="Conf. 1 - netperf UDP throughput (1 MB)", ylab="Throughput (Mbps)", xlab="Message size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=FALSE)
 
 # Calculate quartiles and median for each box
 q1 <- bp$stats[2, ]
@@ -32,7 +32,7 @@ legend_labels <- sapply(1:ncol(data_matrix), function(i) {
 legend("bottomright", legend=legend_labels, fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
 
 # Open an SVG graphics device and save the plot as an SVG image
-svg("boxplots/netperf-boxplot-udp-throughput-1mb-six-buffer.svg")
-boxplot(data_matrix, horizontal=FALSE, main="Conf. 2 - netperf UDP throughput (1 MB)", ylab="Throughput (Mbps)", xlab="Message size (B)", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
+svg("boxplots/one-netperf-boxplot-udp-throughput-1mb-six-buffer.svg")
+boxplot(data_matrix, horizontal=FALSE, main="Conf. 1 - netperf UDP throughput (1 MB)", ylab="Throughput (Mbps)", xlab="Message size (B)", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
 legend("bottomright", legend=legend_labels, fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
 dev.off()

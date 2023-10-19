@@ -17,8 +17,9 @@ column_names <- c("104 KB", "208 KB", "512 KB", "1 MB", "10 MB", "50 MB")
 # Set the column names for the data_matrix
 colnames(data_matrix) <- column_names
 
+
 # Create a boxplot with multiple boxes
-bp <- boxplot(data_matrix, horizontal=FALSE, main="Conf. 2 - iperf3 UDP throughput (no injection limit)", ylab="Throughput (Mbps)", xlab="Buffer size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
+bp <- boxplot(data_matrix, horizontal=FALSE, main="Conf. 1 - iperf3 UDP throughput (no injection limit)", ylab="Throughput (Mbps)", xlab="Buffer size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
 
 par(cex.axis = 0.8, cex.lab = 0.8)
 
@@ -36,8 +37,8 @@ legend_labels <- sapply(1:ncol(data_matrix), function(i) {
 legend("bottomright", legend=legend_labels, fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
 
 # Open an SVG graphics device and save the plot as an SVG image
-svg("boxplots/iperf3-boxplot-udp-throughput-0-six-buffer.svg")
-boxplot(data_matrix, horizontal=FALSE, main="Conf. 2 - iperf3 UDP throughput (no injection limit)", ylab="Throughput (Mbps)", xlab="Buffer size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
+svg("boxplots/one-iperf3-boxplot-udp-throughput-0-six-buffer.svg")
+boxplot(data_matrix, horizontal=FALSE, main="Conf. 1 - iperf3 UDP throughput (no injection limit)", ylab="Throughput (Mbps)", xlab="Buffer size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
 par(cex.axis = 0.8, cex.lab = 0.8)
 legend("bottomright", legend=legend_labels, fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
 dev.off()

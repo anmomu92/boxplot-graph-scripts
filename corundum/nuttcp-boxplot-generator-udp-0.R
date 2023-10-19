@@ -2,9 +2,6 @@
 data1 <- read.table("sin-switch/nuttcp/udp-box-plot-212992-0.txt", header = FALSE)
 data2 <- read.table("sin-switch/nuttcp/udp-box-plot-157286400-0.txt", header = FALSE)
 
-# Define custom y-axis values
-#y_values <- c("208 KB", "150 MB")
-
 # Combine data into a matrix
 data_matrix <- cbind(data1, data2)
 
@@ -15,7 +12,7 @@ colnames(data_matrix) <- column_names
 
 
 # Create a boxplot with multiple boxes
-bp <- boxplot(data_matrix, horizontal=TRUE, main="Conf. 2 - nuttcp UDP throughput (no injection limit)", xlab="Throughput (Mbps)", ylab="Buffer size", col=c("lightblue", "lightgreen"), outline=TRUE)
+bp <- boxplot(data_matrix, horizontal=TRUE, main="Conf. 1 - nuttcp UDP throughput (no injection limit)", xlab="Throughput (Mbps)", ylab="Buffer size", col=c("lightblue", "lightgreen"), outline=TRUE)
 
 # Calculate quartiles and median for each box
 q1 <- bp$stats[2, ]
@@ -31,7 +28,7 @@ legend_labels <- sapply(1:ncol(data_matrix), function(i) {
 legend("topleft", legend=legend_labels, fill=c("lightblue", "lightgreen"), cex = 0.7)
 
 # Open an SVG graphics device and save the plot as an SVG image
-svg("boxplots/nuttcp-boxplot-udp-throughput-0.svg")
-boxplot(data_matrix, horizontal=TRUE, main="Conf. 2 - nuttcp UDP throughput (no injection limit)", xlab="Throughput (Mbps)", ylab="Buffer size", col=c("lightblue", "lightgreen"), outline=TRUE)
+svg("boxplots/one-nuttcp-boxplot-udp-throughput-0.svg")
+boxplot(data_matrix, horizontal=TRUE, main="Conf. 1 - nuttcp UDP throughput (no injection limit)", xlab="Throughput (Mbps)", ylab="Buffer size", col=c("lightblue", "lightgreen"), outline=TRUE)
 legend("topleft", legend=legend_labels, fill=c("lightblue", "lightgreen"), cex = 0.7)
 dev.off()

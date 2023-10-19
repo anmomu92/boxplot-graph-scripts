@@ -1,0 +1,2 @@
+# The average latency after 20 runs is the following: 
+.575

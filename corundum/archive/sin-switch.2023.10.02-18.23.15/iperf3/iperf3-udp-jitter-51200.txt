@@ -1,0 +1,18 @@
+# INJ BITRATE: 1000 Mbps - BUFFER SIZE: 51200 KB
+The average jitter for UDP in 2 runs and injection bitrate of 1000 is .007 ms
+1000 .007
+# INJ BITRATE: 3000 Mbps - BUFFER SIZE: 51200 KB
+The average jitter for UDP in 2 runs and injection bitrate of 3000 is .007 ms
+3000 .007
+# INJ BITRATE: 5000 Mbps - BUFFER SIZE: 51200 KB
+The average jitter for UDP in 2 runs and injection bitrate of 5000 is 0 ms
+5000 0
+# INJ BITRATE: 7000 Mbps - BUFFER SIZE: 51200 KB
+The average jitter for UDP in 2 runs and injection bitrate of 7000 is .001 ms
+7000 .001
+# INJ BITRATE: 10000 Mbps - BUFFER SIZE: 51200 KB
+The average jitter for UDP in 2 runs and injection bitrate of 10000 is 0 ms
+10000 0
+# INJ BITRATE: 0 Mbps - BUFFER SIZE: 51200 KB
+The average jitter for UDP in 2 runs and injection bitrate of 0 is .002 ms
+0 .002

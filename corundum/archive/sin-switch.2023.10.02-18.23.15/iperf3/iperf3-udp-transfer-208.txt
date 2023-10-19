@@ -1,0 +1,18 @@
+# INJ BITRATE: 1000 Mbps - BUFFER SIZE: 208 KB
+The average transfer for UDP in 2 runs and injection bitrate of 1000 Mbps is 124.000 MBytes
+1000 124.000
+# INJ BITRATE: 3000 Mbps - BUFFER SIZE: 208 KB
+The average transfer for UDP in 2 runs and injection bitrate of 3000 Mbps is 367.500 MBytes
+3000 367.500
+# INJ BITRATE: 5000 Mbps - BUFFER SIZE: 208 KB
+The average transfer for UDP in 2 runs and injection bitrate of 5000 Mbps is 436.000 MBytes
+5000 436.000
+# INJ BITRATE: 7000 Mbps - BUFFER SIZE: 208 KB
+The average transfer for UDP in 2 runs and injection bitrate of 7000 Mbps is 559.000 MBytes
+7000 559.000
+# INJ BITRATE: 10000 Mbps - BUFFER SIZE: 208 KB
+The average transfer for UDP in 2 runs and injection bitrate of 10000 Mbps is 1.160 GBytes
+10000 1.160
+# INJ BITRATE: 0 Mbps - BUFFER SIZE: 208 KB
+The average transfer for UDP in 2 runs and injection bitrate of 0 Mbps is 167.575 GBytes
+0 167.575

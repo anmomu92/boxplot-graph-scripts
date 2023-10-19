@@ -1,0 +1,2 @@
+# The average number of retransmissions after 20 runs is the following: 
+8980.400

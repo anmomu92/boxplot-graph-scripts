@@ -1,0 +1,2 @@
+# The average throughput after 20 runs is the following: 
+bitrate 9404.945

@@ -1,10 +1,10 @@
 # Sample data for multiple boxes
-data1 <- read.table("sin-switch/netperf/udp-box-plot-212992-512.txt", header = FALSE)
-data2 <- read.table("sin-switch/netperf/udp-box-plot-212992-1024.txt", header = FALSE)
-data3 <- read.table("sin-switch/netperf/udp-box-plot-212992-2048.txt", header = FALSE)
-data4 <- read.table("sin-switch/netperf/udp-box-plot-212992-4096.txt", header = FALSE)
-data5 <- read.table("sin-switch/netperf/udp-box-plot-212992-8192.txt", header = FALSE)
-data6 <- read.table("sin-switch/netperf/udp-box-plot-212992-16384.txt", header = FALSE)
+data1 <- read.table("sin-switch/netperf/udp-box-plot-208-512.txt", header = FALSE)
+data2 <- read.table("sin-switch/netperf/udp-box-plot-208-1024.txt", header = FALSE)
+data3 <- read.table("sin-switch/netperf/udp-box-plot-208-2048.txt", header = FALSE)
+data4 <- read.table("sin-switch/netperf/udp-box-plot-208-4096.txt", header = FALSE)
+data5 <- read.table("sin-switch/netperf/udp-box-plot-208-8192.txt", header = FALSE)
+data6 <- read.table("sin-switch/netperf/udp-box-plot-208-16384.txt", header = FALSE)
 
 # Combine data into a matrix
 data_matrix <- cbind(data1, data2, data3, data4, data5, data6)
@@ -16,7 +16,7 @@ colnames(data_matrix) <- column_names
 
 
 # Create a boxplot with multiple boxes
-bp <- boxplot(data_matrix, horizontal=FALSE, main="Conf. 2 - netperf UDP throughput (208 KB)", ylab="Throughput (Mbps)", xlab="Message size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=FALSE)
+bp <- boxplot(data_matrix, horizontal=FALSE, main="Conf. 1 - netperf UDP throughput (208 KB)", ylab="Throughput (Mbps)", xlab="Message size", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=FALSE)
 
 # Calculate quartiles and median for each box
 q1 <- bp$stats[2, ]
@@ -29,10 +29,10 @@ legend_labels <- sapply(1:ncol(data_matrix), function(i) {
 })
 
 # Create a legend
-legend("bottomright", legend=legend_labels, fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
+legend("bottomright", legend=legend_labels, xpd=TRUE, inset=c(0, -.45), fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
 
 # Open an SVG graphics device and save the plot as an SVG image
-svg("boxplots/netperf-boxplot-udp-throughput-208kb.svg")
-boxplot(data_matrix, horizontal=FALSE, main="Conf. 2 - netperf UDP throughput (208 KB)", ylab="Throughput (Mbps)", xlab="Message size (B)", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
+svg("boxplots/one-netperf-boxplot-udp-throughput-208kb.svg")
+boxplot(data_matrix, horizontal=FALSE, main="Conf. 1 - netperf UDP throughput (208 KB)", ylab="Throughput (Mbps)", xlab="Message size (B)", col=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), outline=TRUE)
 legend("bottomright", legend=legend_labels, fill=c("lightblue", "lightgreen", "lightcoral", "lightyellow", "lightpink", "lightgray"), cex = 0.7)
 dev.off()

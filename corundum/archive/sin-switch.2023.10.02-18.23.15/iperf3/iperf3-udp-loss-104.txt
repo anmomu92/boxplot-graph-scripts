@@ -1,0 +1,18 @@
+# INJ BITRATE: 1000 Mbps - BUFFER SIZE: 104 KB
+The average datagram loss for UDP in 2 runs and injection bitrate of 1000 is .900 %
+1000 .900
+# INJ BITRATE: 3000 Mbps - BUFFER SIZE: 104 KB
+The average datagram loss for UDP in 2 runs and injection bitrate of 3000 is 7.350 %
+3000 7.350
+# INJ BITRATE: 5000 Mbps - BUFFER SIZE: 104 KB
+The average datagram loss for UDP in 2 runs and injection bitrate of 5000 is 6.000 %
+5000 6.000
+# INJ BITRATE: 7000 Mbps - BUFFER SIZE: 104 KB
+The average datagram loss for UDP in 2 runs and injection bitrate of 7000 is .545 %
+7000 .545
+# INJ BITRATE: 10000 Mbps - BUFFER SIZE: 104 KB
+The average datagram loss for UDP in 2 runs and injection bitrate of 10000 is .505 %
+10000 .505
+# INJ BITRATE: 0 Mbps - BUFFER SIZE: 104 KB
+The average datagram loss for UDP in 2 runs and injection bitrate of 0 is .415 %
+0 .415

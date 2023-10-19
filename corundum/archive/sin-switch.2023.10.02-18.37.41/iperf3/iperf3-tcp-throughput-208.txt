@@ -1,0 +1,1 @@
+# The average bitrate after 2 runs is the following: 
